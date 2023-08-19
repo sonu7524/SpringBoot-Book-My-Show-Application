@@ -16,9 +16,14 @@ public class UserService {
     @Autowired
     UserRepository userRepository;
 
-    public String addUser(UserEntryDto userEntryDto)throws Exception,NullPointerException{
+    public String addUser(UserEntryDto userEntryDto){
 
         UserEntity userEntity = UserConvertor.convertDtoToEntity(userEntryDto);
+
+        if(userEntity.getMobNo().length() != 10){
+            return "mobile no. is not correct";
+        }
+
 
         userRepository.save(userEntity);
 

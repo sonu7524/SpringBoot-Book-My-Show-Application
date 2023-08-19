@@ -28,7 +28,7 @@ public class UserEntity {
     private String email;
 
     @NonNull
-    @Column(unique = true)
+    @Column(unique = true, length = 10)
     private String mobNo;
 
     private String address;

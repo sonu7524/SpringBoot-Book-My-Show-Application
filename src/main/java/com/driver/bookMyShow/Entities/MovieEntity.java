@@ -1,7 +1,4 @@
 package com.driver.bookMyShow.Entities;
-
-
-
 import com.driver.bookMyShow.Enums.Genre;
 import com.driver.bookMyShow.Enums.Language;
 import lombok.AllArgsConstructor;
@@ -44,6 +41,5 @@ public class MovieEntity {
     //this is parent wrt to shows
     @OneToMany(mappedBy = "movieEntity",cascade = {CascadeType.MERGE, CascadeType.PERSIST})
     private List<ShowEntity> showEntityList = new ArrayList<>();
-
 
 }

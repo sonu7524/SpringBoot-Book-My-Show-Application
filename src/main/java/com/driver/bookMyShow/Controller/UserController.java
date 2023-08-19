@@ -30,6 +30,5 @@ public class UserController {
             String result = "User could not be added";
             return new ResponseEntity<>(result,HttpStatus.BAD_REQUEST);
         }
-
     }
 }

@@ -106,7 +106,7 @@ public class TicketService {
 
 
         // email body
-        String body = "Hi this is to confirm your booking with details:\nTicket id: "+ ticketEntity.getTicketId() +".\nSeat No: "+allotedSeats
+        String body = "Hi,\nThis is to confirm your booking is confirmed with details:\nTicket id: "+ ticketEntity.getTicketId() +".\nSeat No: "+allotedSeats
                 +".\nMovie Name: " + ticketEntity.getMovieName() +".\nTheater: "+ ticketEntity.getTheaterName() +".\nShow Timing: "+ ticketEntity.getShowTime();
 
 
